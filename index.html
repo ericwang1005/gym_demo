@@ -5,22 +5,52 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
      <style>
+        /*1rem ==> 16px*/
         body{
-            background-color: aquamarine;
+            background-color: #000;
+            color: azure;
         }
-        h1{
-            background-color: bisque;
-            color: black;
+        .title{
+            background-color:#000;
+            color: lime;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            font-size: 32px;
+            border-radius: 6px;
+            margin: 12px;
         }
-        h2{
+        .sub-title{
             background-color: blueviolet;
+            color:bisque;
+            font-size: 24px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            margin: 12px 10px;
+            border-radius: 6px;
+            padding: 8px 5px;
+        }
+        .article{
             color:bisque
+        }
+        textarea{
+            border-radius: 6px;
+        }
+        #container{
+            padding: 1rem;
+        }
+        #images-container{
+            text-align: center;
+        }
+        .images{
+            background-color: aliceblue;
+            padding: 12px;
+            width: 28%;
+            margin:3px
         }
      </style>
 </head>
 <body>
-    <h1>我愛健身網站</h1>
-    <div style="background-color: aliceblue; color: black;">
+    <div id="container">
+    <div class="title">我愛健身網站</div>
+    <div class="sub-title">
     <b>健身，
     英文稱為workout，健身這兩個字拆開來的意思就是健康身體，
     通過各種運動方式或方法來增強力量、增加肌肉量、柔韌性、耐力，
@@ -30,10 +60,10 @@
     舞臺上或者是電影螢幕上綻放光彩。<u>答案就是<b>堅持運動健身!</b></u></em>
     </div>
     <hr>
-    <img src="https://img.zcool.cn/community/014f2c5dc0d741a801209e1fac5499.jpg@2o.jpg" alt="健身banner" width="100%" >
-    <h2>
+    <img class="image" src="https://img.zcool.cn/community/014f2c5dc0d741a801209e1fac5499.jpg@2o.jpg" alt="健身banner" width="100%" >
+    <div class="sub-title">
         健身的十大好處
-    </h2>
+    </div>
     <ol >
         <li>增加基礎代謝率</li>
         <li>預防疾病和提高免疫力</li>
@@ -48,21 +78,23 @@
         </li>
     </ol>
     <hr>
-    <img src="img/charles-gaudreault-xXofYCc3hqc-unsplash.jpg" width="33%">
-    <img src="img/julia-rekamie-Z72YujnOrlY-unsplash.jpg" width="31%">
-    <img src="img/mohamed-fareed-rbSNsoXk-3A-unsplash.jpg" width="33%">
+    <div id="images-container">
+        <img class="images" src="img/charles-gaudreault-xXofYCc3hqc-unsplash.jpg">
+        <img class="images" src="img/julia-rekamie-Z72YujnOrlY-unsplash.jpg">
+        <img class="images" src="img/mohamed-fareed-rbSNsoXk-3A-unsplash.jpg">
+    </div>
     <hr>
-    <h2>好文章連結</h2>
+    <div class="sub-title">好文章連結</div>
     <ul>
-        <li><a href="https://blog.worldgymtaiwan.com/common-symptoms-of-menopause" target="_blank">更年期症狀讓妳變得不快樂難相處嗎？調整飲食與運動是公認最佳良藥</a></li>
-        <li><a href="https://blog.worldgymtaiwan.com/training-can-help-protect-the-brain-from-degeneration" target="_blank">改善記憶力</a></li>
-        <li><a href="https://www.waldenu.edu/online-bachelors-programs/bs-in-psychology/resource/five-mental-benefits-of-exercise" target="_blank">5 Mental Benefits of Exercise</a></li>
+        <li><a href="https://blog.worldgymtaiwan.com/common-symptoms-of-menopause" target="_blank" class="article">更年期症狀讓妳變得不快樂難相處嗎？調整飲食與運動是公認最佳良藥</a></li>
+        <li><a href="https://blog.worldgymtaiwan.com/training-can-help-protect-the-brain-from-degeneration" target="_blank" class="article">改善記憶力</a></li>
+        <li><a href="https://www.waldenu.edu/online-bachelors-programs/bs-in-psychology/resource/five-mental-benefits-of-exercise" target="_blank" class="article">5 Mental Benefits of Exercise</a></li>
     </ul>
     <small>
-        引用網址: <a href="https://blog.worldgymtaiwan.com/" target="_blank">https://blog.worldgymtaiwan.com/</a>
+        引用網址: <a href="https://blog.worldgymtaiwan.com/" target="_blank" class="article">https://blog.worldgymtaiwan.com/</a>
     </small>
     <hr>
-    <h2>一天所需卡路里</h2>
+    <div class="sub-title">一天所需卡路里</div>
     <table border="1">
         <thead>
             <tr>
@@ -130,11 +162,11 @@
         </ol>
     </p>
     <hr>
-    <h2>健身影片</h2>
-    <iframe width="100%" height="716" src="https://www.youtube.com/embed/9BK7Y6HRTkM" title="「约练郑智敏系列EP.1」死亡肩膀训练，如何打造爱心肩，健身爱好者和专业选手的差距，看我被惨虐" frameborder="1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-    <video src="videos/file_example_MP4_640_3MG.mp4" width="100%" controls></video>
+    <div class="sub-title">健身影片</div>
+    <iframe width="100%" height="716" class="image" src="https://www.youtube.com/embed/9BK7Y6HRTkM" title="「约练郑智敏系列EP.1」死亡肩膀训练，如何打造爱心肩，健身爱好者和专业选手的差距，看我被惨虐" frameborder="1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    <video class="image" src="videos/file_example_MP4_640_3MG.mp4" width="100%" controls></video>
     <hr>
-    <h2>需要更多資訊?免費索取健身資訊</h2>
+    <div class="sub-title">需要更多資訊?免費索取健身資訊</div>
     <p>前100名還贈送 <b>[ 我愛健身 ]</b> 書籍一本!</p>
     <form action="">
         <label for="email">
@@ -145,5 +177,6 @@
         <br>
         <button type="submit">Go</button>
     </form>
+</div>
 </body>
 </html>
