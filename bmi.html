@@ -4,21 +4,45 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BMI</title>
+    <link rel="stylesheet" href="static/main.css">
+    <style>
+        @media screen and (max-width:768px) {
+            form{
+                width: 100%;
+                color:yellowgreen;
+            }
+        }
+        body{
+            background-image: url(https://img.zcool.cn/community/014f2c5dc0d741a801209e1fac5499.jpg@2o.jpg) ;
+        }
+        form{
+            background-color: wheat;
+            border-radius: 6px ;
+            position: relative;
+            margin-top: 50px;
+            opacity: 0.75;
+            color: black;
+        }
+    </style>
 </head>
 <body>
-    <h1>BMI計算機 v0.1</h1>
-    <form action="">
-        <label for="name">
-            Name: <input type="text" name="name" id="name" placeholder="Enter Name">
-        </label><br>
-        <label for="height">
-            Height: <input type="number" step="any" name="height" id="height" placeholder="Please transfer to Meters" required>
-        </label><br>
-        <label for="weight">
-            Weight: <input type="number" name="weight" id="weight" placeholder="Enter Weight" required>
-        </label><br>
-        <button type="submit" >Submit</button>
-    </form>
-    <a href="/index.html">回首頁</a>
+    <div class="main-div">
+        <div style="margin: 0 auto; width: 60%;text-align: center;">
+            <h1 class="title">BMI計算機 v0.1</h1>
+        </div>
+        <form action="">
+            <label for="name">
+                Name: <input type="text" name="name" id="name" placeholder="Enter Name">
+            </label><br>
+            <label for="height">
+                Height: <input type="number" step="any" name="height" id="height" placeholder="Please transfer to Meters" required>
+            </label><br>
+            <label for="weight">
+                Weight: <input type="number" name="weight" id="weight" placeholder="Enter Weight" required>
+            </label><br>
+            <button type="submit" >Submit</button>
+            <a href="/index.html" >回首頁</a>
+        </form>
+    </div>
 </body>
 </html>

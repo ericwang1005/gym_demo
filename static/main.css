@@ -1,0 +1,27 @@
+/*1rem ==> 16px*/
+body{
+    background-color: #000;
+    color: azure;
+}
+.title{
+    background-color:#000;
+    color: lime;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 32px;
+    border-radius: 6px;
+    margin: 12px;
+}
+#container{
+    padding: 1rem;
+}
+form{
+    width: 60%;
+    text-align: center;
+    margin: 0 auto;
+}
+input,
+label,
+button,
+textarea{
+    border-radius: 6px;
+}
