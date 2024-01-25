@@ -31,8 +31,8 @@
             <h1 class="title">BMI計算機 v0.1</h1>
         </div>
         <form action="">
-            <label for="name">
-                Name: <input type="text" name="name" id="name" placeholder="Enter Name">
+            <label for="username">
+                Name: <input type="text" name="username" id="username" placeholder="Enter Name" required>
             </label><br>
             <label for="height">
                 Height: <input type="number" step="any" name="height" id="height" placeholder="Please transfer to Meters" required>
@@ -40,9 +40,12 @@
             <label for="weight">
                 Weight: <input type="number" name="weight" id="weight" placeholder="Enter Weight" required>
             </label><br>
-            <button type="submit" >Submit</button>
+            <button type="button" onclick="calcuBmi()">Submit</button>
+            <div class="bmi">BMI:27.45</div>
+            <div class="comment">正常</div>
             <a href="/index.html" >回首頁</a>
         </form>
     </div>
+    <script src="./static/bmi.js"></script>
 </body>
 </html>
